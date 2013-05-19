@@ -1,0 +1,18 @@
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <!-- Configuration for the default package. -->
+    <package name="struts 2" extends="struts-default">  
+        <action name="login" class="webapp.action.LoginAction" method="recommend">
+           <result name="success">recommend.jsp</result>
+           <result name="error"> error.jsp </result>
+        </action>
+        
+        <action name="evaluate" class="webapp.action.EvaluateAction" method="saveEvalation">
+           <result name="success">result.jsp</result>
+           <result name="error">error.jsp</result>
+        </action>
+        
+    </package>
+</struts>
